@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.nav-btn{
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    background-color: blue;
+}
+.nav-btn i{
+    color: #fff;
+}
+.overlay{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    /* para ficar na frente dos outros itens */
+    z-index: 9;
+    left: 0;
+    top: 0;
+    /* usado para não passar nda da tela na horizontal */
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+.overlay a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus{
+    color: white;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 40px;
+}
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+@media screen { (max-height: 450px;)
+    
+}
